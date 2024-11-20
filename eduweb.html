@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <style>
+       
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Course List */
+        ul.courses-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.courses-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label, form input, form textarea, form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Learn,Grow,Succeed</h1>
+        <p>Your Future Starts Here</p>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#news">Chatboot</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    
+    <main class="container">
+       
+        <section id="home">
+            <h2>Welcome to our  website</h2>
+            <p>Our website provides an exceptional learning environment for school  students. Explore our courses and activities that will shape your future.</p>
+        </section>
+
+    
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Founded in [Year], [School Name] offers a well-rounded education with a focus on both academics and extracurricular activities. We are committed to fostering a creative and inclusive environment for all students.</p>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <ul class="courses-list">
+                <li>Mathematics</li>
+                <li>Science</li>
+                <li>English Literature</li>
+                <li>History</li>
+                <li>Computer Science</li>
+            </ul>
+        </section>
+
+        <!-- News & Events Section -->
+        <!--section id="news">
+            <h2>News & Events</h2>
+            <p>Stay updated with our latest news, events, and announcements!</p>
+            <ul>
+                <li><a href="#">School Annual Day - Date: [Event Date]</a></li>
+                <li><a href="#">Science Fair - Date: [Event Date]</a></li>
+                <li><a href="#">Sports Meet - Date: [Event Date]</a></li>
+            </ul>
+        </section-->
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
